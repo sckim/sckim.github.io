@@ -1,12 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My GitHub Page</title>
+    <title>Profile Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #282c35;
+            color: #ffffff;
+        }
+        .container {
+            text-align: center;
+            max-width: 500px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .title {
+            font-size: 1.5em;
+            margin-bottom: 5px;
+        }
+        .subtitle {
+            font-size: 1.2em;
+            color: #b0b3b8;
+            margin-bottom: 20px;
+        }
+        .name {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #4a90e2;
+        }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 20px 0;
+            overflow: hidden;
+            position: relative;
+        }
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .link-button {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+        .link-button:hover {
+            background-color: #555;
+        }
+        .link-button img {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>This is my personal GitHub Pages site.</p>
+    <div class="container">
+        <div class="title">안녕하세요!</div>
+        <div class="subtitle">가르치고, 배우고, 연구하는</div>
+        <div class="name">Enjoy learning</div>
+
+        <div class="profile-image">
+            <img src="img/enjoylearning.webp" alt="Profile">
+        </div>
+
+        <div class="links">
+            <a href="https://github.com/sckim" class="link-button">
+                <img src="https://img.icons8.com/material-outlined/24/ffffff/github.png" alt="GitHub"> GitHub
+            </a>
+            <a href="https://youtube.com" class="link-button">
+                <img src="https://img.icons8.com/material-outlined/24/ffffff/youtube-play.png" alt="YouTube"> YouTube
+            </a>
+            <a href="mailto:firmware90@gmail.com" class="link-button">
+                <img src="https://img.icons8.com/material-outlined/24/ffffff/filled-message.png" alt="Email"> Email
+            </a>
+        </div>
+    </div>
 </body>
 </html>
