@@ -24,7 +24,7 @@
   image: "/img/instruments/tek-mdo34.webp"
 - name: "PS420 Fluke multifunction simulator"
   description: "Handheld, high-performance simulator for testing patient monitors: full range of ECG, respiration, blood pressure, temperature and cardiac output conditions, 12-lead ECG, two-channel blood pressure simulation, 35 arrhythmia selections, pacemaker simulation, adult and pediatric normal sinus rhythms."
-  url: "https://www.flukebiomedical.com/products/biomedical-test-equipment/patient-monitor-simulators/ps420-patient-simulator"
+  url: ""
   image: "/img/instruments/fluke-ps420.webp"
 - name: "Electrical Equipment Safety Analyzer ESA620"
   description: "Electrical safety analyzer with Ansur Test Automation for standardized testing; performs all primary electrical safety tests for IEC 60601-1 compliance of medical devices."
