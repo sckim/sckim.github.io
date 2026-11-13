@@ -1,0 +1,9 @@
+# 한글판 기술 (분류명만 번역, 항목은 영문판과 동일)
+- category: "프로그래밍 언어"
+  items: ["C/C++", "LabVIEW", "Python", "R", "Processing", "Pascal", "Delphi", "Visual Basic", "x86 Assembler", "DSP Assembler etc."]
+- category: "하드웨어"
+  items: ["MSP430", "Atmel uC, 328P, 128L, etc", "TMS320C3x", "Arduino, Raspberry pi, Beaglebones", "Altera FPGA", "PIC16Cxx, 80C196KC, Z80",
+          "아날로그 - 신호 증폭기, PLL, 필터, 광(Opto), 스텝모터 구동, 변·복조기, 전원장치, LCD 등",
+          "시리얼 (RS232/422/485), 프린터 포트 인터페이스"]
+- category: "도구"
+  items: ["MATLAB", "Multisim & Ultiboard, OrCAD, Eagle, Proteus", "Quartus II (VHDL, Verilog)", "Solidworks", "MathCAD", "OpenCV", "SPSS", "iLAB", "Psychtoolbox"]

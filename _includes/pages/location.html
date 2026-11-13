@@ -1,0 +1,8 @@
+{% assign lang = page.lang | default: "en" %}{% assign T = site.data.i18n[lang] %}
+{% assign p = site.data.profile %}
+{% if lang == "ko" %}{% assign pk = site.data.ko.profile %}{% else %}{% assign pk = p %}{% endif %}
+<p>{{ pk.affiliation }}<br>{{ pk.address }}</p>
+{% capture q %}Hankyong National University, 327 Jungang-ro, Anseong-si, Gyeonggi-do{% endcapture %}
+<iframe class="map" title="{{ T.map_title }}" loading="lazy"
+  src="https://maps.google.com/maps?q={{ q | url_encode }}&output=embed"></iframe>
+<p><a href="https://maps.google.com/maps?q={{ q | url_encode }}">{{ T.map_open }}</a></p>

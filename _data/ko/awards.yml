@@ -1,0 +1,7 @@
+# 한글판 수상 (영문판 _data/awards.yml 과 같은 순서)
+- { year: 2010,        text: "논문상, 대한전자공학회" }
+- { year: "2003–2004", text: "박사후연수 펠로십(Post-doctoral Fellowship), 한국과학재단" }
+- { year: 2002,        text: "Whitaker Foundation 학회 참가상(Conference Award)" }
+- { year: 2002,        text: "제1회 IEEE EMBS 의료기기·바이오센서 국제 하계학교, 위스콘신대학교" }
+- { year: "1998–1999", text: "학생 복지 장학금, 연세대학교" }
+- { year: "1990–1994", text: "등록금 장학금(4회), 인제대학교" }

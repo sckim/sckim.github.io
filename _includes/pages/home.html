@@ -1,0 +1,36 @@
+{% assign lang = page.lang | default: "en" %}{% assign T = site.data.i18n[lang] %}
+{% assign p = site.data.profile %}
+{% if lang == "ko" %}{% assign pk = site.data.ko.profile %}{% assign career = site.data.ko.career %}{% assign awards = site.data.ko.awards %}{% assign soc = site.data.ko.societies %}{% else %}{% assign pk = p %}{% assign career = site.data.career %}{% assign awards = site.data.awards %}{% assign soc = site.data.societies %}{% endif %}
+<section class="hero">
+  <img src="{{ p.photo | relative_url }}" alt="">
+  <div>
+    <h1>{% if lang == "ko" %}{{ pk.name }} <span class="ko">{{ pk.name_other }}</span>{% else %}{{ p.name }} <span class="ko">{{ p.name_ko }}</span>{% endif %}</h1>
+    <p><strong>{{ pk.title }}</strong><br>{{ pk.affiliation }}</p>
+    <p>{{ pk.address }}<br>
+      <a href="#" data-email-user="{{ p.email_user }}" data-email-domain="{{ p.email_domain }}" data-email-show>{{ T.email }}</a>
+      {% for l in p.links %}{% if l.url != "" %} · <a href="{{ l.url }}">{{ l.title }}</a>{% endif %}{% endfor %}
+    </p>
+  </div>
+</section>
+
+<h2>{{ T.research_interests }}</h2>
+<p>{{ pk.research_interests }}</p>
+<div class="quick">
+  {% for item in T.nav %}{% unless forloop.first %}<a href="{{ item.url | relative_url }}">{{ item.title }}</a>{% endunless %}{% endfor %}
+</div>
+
+<h2>{{ T.career }}</h2>
+<ul class="timeline">
+  {% for c in career %}<li><span class="when">{{ c.period }}</span><span>{{ c.text }}</span></li>{% endfor %}
+</ul>
+
+<h2>{{ T.awards }}</h2>
+<ul class="timeline">
+  {% for a in awards %}<li><span class="when">{{ a.year }}</span><span>{{ a.text }}</span></li>{% endfor %}
+</ul>
+
+<h2>{{ T.activities }}</h2>
+<ul>{% for a in soc.activities %}<li>{{ a }}</li>{% endfor %}</ul>
+
+<h2>{{ T.societies }}</h2>
+<ul class="chips">{% for s in soc.societies %}<li>{{ s }}</li>{% endfor %}</ul>

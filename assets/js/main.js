@@ -23,6 +23,13 @@
     });
   }
 
+  // 언어 선택 기억 / remember the chosen language (영문 홈 → 한글 홈 자동 이동에 사용)
+  document.querySelectorAll('[data-lang-switch]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      try { localStorage.setItem('lang', a.dataset.langSwitch); } catch (e) {}
+    });
+  });
+
   // 이메일 스팸 방지: data 속성으로 조합 / assemble e-mail at runtime
   document.querySelectorAll('[data-email-user]').forEach(function (a) {
     var addr = a.dataset.emailUser + '@' + a.dataset.emailDomain;

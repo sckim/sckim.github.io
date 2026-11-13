@@ -1,0 +1,10 @@
+# 한글판 프로필 / Korean profile  (사진·이메일·링크는 영문판 _data/profile.yml 과 공유)
+name: 김수찬
+name_other: Soochan Kim
+title: 교수
+affiliation: 한경국립대학교 전기전자공학과
+affiliation_short: 한경국립대학교 전기전자공학과
+address: "(17579) 경기도 안성시 중앙로 327"
+research_interests: >-
+  안구운동(eye movement) 측정, 비침습 생체신호 측정 및 분석,
+  인간-컴퓨터 상호작용(HCI)과 그 응용에 관한 연구를 수행한다.

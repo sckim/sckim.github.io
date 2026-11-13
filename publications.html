@@ -4,33 +4,4 @@ title: Publications
 heading: Publications
 permalink: /publications/
 ---
-{% assign d = site.data.publications %}
-<div class="quick">
-  <a href="#journal">International journals ({{ d.journal.size }})</a>
-  <a href="#domestic-journal">Domestic journals ({{ d.domestic_journal.size }})</a>
-  <a href="#conference">International conferences ({{ d.conference.size }})</a>
-  <a href="#domestic-conference">Domestic conferences ({{ d.domestic_conference.size }})</a>
-  <a href="#patents">Patents ({{ d.patents.size }})</a>
-  <a href="#activities">Activities &amp; reports</a>
-</div>
-
-<h2 id="journal">International journals</h2>
-{% include pub_list.html items=d.journal %}
-
-<h2 id="domestic-journal">Domestic journals and books</h2>
-{% include pub_list.html items=d.domestic_journal %}
-
-<h2 id="conference">International conferences</h2>
-{% include pub_list.html items=d.conference %}
-
-<h2 id="domestic-conference">Domestic conferences</h2>
-{% include pub_list.html items=d.domestic_conference %}
-
-<h2 id="patents">Patents</h2>
-{% include pub_list.html items=d.patents %}
-
-<h2 id="activities">External activities / 외부 활동</h2>
-<ul>{% for x in d.external %}<li>{% if x.url != "" %}<a href="{{ x.url }}" rel="noopener">{{ x.text }}</a>{% else %}{{ x.text }}{% endif %}</li>{% endfor %}</ul>
-
-<h2>Patents and reports (early work)</h2>
-<ul>{% for x in d.reports %}<li>{{ x.text }}</li>{% endfor %}</ul>
+{% include pages/publications.html %}

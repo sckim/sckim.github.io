@@ -1,30 +1,54 @@
+{% assign lang = page.lang | default: "en" %}
+{% assign T = site.data.i18n[lang] %}
+{% if lang == "ko" %}
+  {% assign home_url = "/ko/" %}
+  {% assign en_url = page.url | replace_first: "/ko/", "/" %}
+  {% assign ko_url = page.url %}
+  {% assign alt_url = en_url %}
+{% else %}
+  {% assign home_url = "/" %}
+  {% assign en_url = page.url %}
+  {% capture ko_url %}/ko{{ page.url }}{% endcapture %}
+  {% assign alt_url = ko_url %}
+{% endif %}
+{% assign has_alt = true %}{% if page.url == "/404.html" %}{% assign has_alt = false %}{% endif %}
 <!DOCTYPE html>
-<html lang="{{ site.lang }}">
+<html lang="{{ lang }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {% assign page_title = page.title | default: site.title %}
-  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
-  <meta name="description" content="{{ page.description | default: site.description }}">
+  {% assign page_title = page.title | default: T.site_title %}
+  {% assign page_desc = page.description | default: T.description %}
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ T.site_title }}</title>
+  <meta name="description" content="{{ page_desc }}">
   <meta property="og:title" content="{{ page_title }}">
-  <meta property="og:description" content="{{ page.description | default: site.description }}">
+  <meta property="og:description" content="{{ page_desc }}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  {% if has_alt %}
+  <link rel="alternate" hreflang="en" href="{{ site.url }}{{ en_url }}">
+  <link rel="alternate" hreflang="ko" href="{{ site.url }}{{ ko_url }}">
+  {% endif %}
   <script>
     try { var t = localStorage.getItem('theme'); if (t) document.documentElement.setAttribute('data-theme', t); } catch (e) {}
+    {% if lang == "en" and page.url == "/" %}
+    // 한글판을 선택한 적이 있으면 영문 홈에서 한글 홈으로 이동 / remember the chosen language
+    try { if (localStorage.getItem('lang') === 'ko') location.replace('{{ "/ko/" | relative_url }}'); } catch (e) {}
+    {% endif %}
   </script>
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
   <header class="site-header">
     <div class="wrap bar">
-      <a class="brand" href="{{ '/' | relative_url }}">Soochan Kim <span class="ko">김수찬</span></a>
-      <button class="icon-btn nav-toggle" aria-label="Menu" aria-expanded="false">☰</button>
+      <a class="brand" href="{{ home_url | relative_url }}">{% if lang == "ko" %}김수찬 <span class="ko">Soochan Kim</span>{% else %}Soochan Kim <span class="ko">김수찬</span>{% endif %}</a>
+      <button class="icon-btn nav-toggle" aria-label="{{ T.menu }}" aria-expanded="false">☰</button>
       <nav class="site-nav" aria-label="Main">
-        {% for item in site.nav %}
+        {% for item in T.nav %}
           <a href="{{ item.url | relative_url }}"{% if page.url == item.url %} class="active" aria-current="page"{% endif %}>{{ item.title }}</a>
         {% endfor %}
-        <button class="icon-btn theme-toggle" aria-label="Toggle dark mode">◐</button>
+        {% if has_alt %}<a class="lang-switch" href="{{ alt_url | relative_url }}" hreflang="{% if lang == 'ko' %}en{% else %}ko{% endif %}" lang="{% if lang == 'ko' %}en{% else %}ko{% endif %}" title="{{ T.switch_title }}" data-lang-switch="{% if lang == 'ko' %}en{% else %}ko{% endif %}">{{ T.switch_label }}</a>{% endif %}
+        <button class="icon-btn theme-toggle" aria-label="{{ T.dark_mode }}">◐</button>
       </nav>
     </div>
   </header>
@@ -36,8 +60,9 @@
 
   <footer class="site-footer">
     <div class="wrap">
-      <p>{{ site.data.profile.affiliation_short }} · <a href="#" data-email-user="{{ site.data.profile.email_user }}" data-email-domain="{{ site.data.profile.email_domain }}">E-mail</a></p>
-      <p class="muted">&copy; {{ 'now' | date: '%Y' }} Soochan Kim</p>
+      {% if lang == "ko" %}{% assign aff = site.data.ko.profile.affiliation_short %}{% else %}{% assign aff = site.data.profile.affiliation_short %}{% endif %}
+      <p>{{ aff }} · <a href="#" data-email-user="{{ site.data.profile.email_user }}" data-email-domain="{{ site.data.profile.email_domain }}">{{ T.email }}</a></p>
+      <p class="muted">&copy; {{ 'now' | date: '%Y' }} {% if lang == "ko" %}김수찬{% else %}Soochan Kim{% endif %}</p>
     </div>
   </footer>
   <script src="{{ '/assets/js/main.js' | relative_url }}"></script>

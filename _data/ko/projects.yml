@@ -1,0 +1,33 @@
+# 한글판 연구과제 (영문판 _data/projects.yml 과 같은 순서. 과제명·기관 약어는 원문 그대로, 공동연구 분야만 번역)
+- { title: "운구 운동을 활용한 피로도 추정", partners: "", period: "2019.3 ~ 2020.2", grant: "HKNU" }
+- { title: "Development of fusion technology of Korean-Western medicines for early prediction of dementia based on multi-modal bio-signals", partners: "한의학", period: "2018.3 ~ 2024.2", grant: "KIOM" }
+- { title: "전자기파가 융합된 스마트나노 입자기반 직접교차분화 리프로그래밍 원천기술 개발", partners: "동국대학교", period: "2017.3 ~ 2021.2", grant: "KOSEF" }
+- { title: "DDFAO (ESC)", partners: "한의학", period: "2015.11 ~ 2017.2", grant: "KIOM" }
+- { title: "Melanogenesis 촉진용 자기장 발생 장치 제조", partners: "동국대학교", period: "2015.11 ~ 2018.10", grant: "KHIDI" }
+- { title: "Hand gesture estimation using EMG and Bioimpedance", partners: "Nitish Thakor", period: "2015.1 ~ 2016.1", grant: "HKNU" }
+- { title: "인체의 자기장 감수성", partners: "경북대학교", period: "2015 ~", grant: "KOSEF" }
+- { title: "Fire alarm and operating system without battery", partners: "Geunha Shin", period: "2014.6 ~ 2015.5.31", grant: "SMBA" }
+- { title: "Assessment of Clinical Probability of ESG (Electroskingram)", partners: "한의학", period: "2014.04 ~ 2014.11", grant: "KIOM" }
+- { title: "Development of a Hand-held type Otoscope with built in function of measuring Body Temperature", partners: "이비인후과", period: "2014.03 ~ 2014.11", grant: "DMIC" }
+- { title: "Electromagnetic Generator to Stimulate Bone Regeneration", partners: "세포생물학", period: "2012.11 ~ 2013.10", grant: "KHIDI" }
+- { title: "Development of a Vestibular Function Tester using multi-channels Accelerators", partners: "이비인후과", period: "2010.12 ~ 2011.11", grant: "" }
+- { title: "Development of Wave Generation and Delivery System", partners: "동국대학교", period: "2009.07 ~ 2014.02", grant: "KOSEF" }
+- { title: "Developing an Objective Evaluation Method to Estimate Prognosis after Cochlear Implant Surgery", partners: "이비인후과", period: "2008.07 ~ 2008.10", grant: "MST" }
+- { title: "Development of Large scale Cell/Blood Auto-stainer", partners: "Dagatron", period: "2007.09 ~ 2008.08", grant: "SMBA" }
+- { title: "Evaluation of driver vigilance for driving Using Biosignals and Gaze Point Analysis", partners: "", period: "2007.08 ~ 2010.07", grant: "KOSEF" }
+- { title: "Emotional mouse", partners: "ISL, RPI", period: "2004.04 ~ 2004.11", grant: "", url: "" }
+- { title: "Development of Eye Gaze Tracking System under Free-Head Movement and Non-contact", partners: "ISL, RPI", period: "2003.12 ~ 2004.11", grant: "KOSEF" }
+- { title: "Auditory Brain Response", partners: "이비인후과", period: "2000.12 ~ 2002.11", grant: "ITEP" }
+- { title: "Development of Videooculograph for Vestibular Function Test", partners: "이비인후과", period: "2000.10 ~ 2003.9", grant: "KOSEF" }
+- { title: "Development of Extremely Low Frequency Electromagnetic Field Generator", partners: "약리학", period: "2000.6 ~ 2001.5", grant: "" }
+- { title: "Detection of Arm and Leg Movement Using Bio-Impedance", partners: "", period: "2000.2 ~ 2003.1", grant: "" }
+- { title: "Development and Evaluation of an Automated Stainer for Mycobacterium Tuberculosis", partners: "미생물학", period: "1999.11 ~ 2001.10", grant: "KITECH" }
+- { title: "Development of Quantitative Tremor System for Measuring Finger and Hand Tremor", partners: "신경외과", period: "1999 ~ 2000", grant: "" }
+- { title: "Diagnosis of Hemorrhagic shock", partners: "", period: "1999 ~ 2000", grant: "" }
+- { title: "Transfer Function Analysis of Doppler Waveforms of Lower Extremity", partners: "", period: "1999", grant: "" }
+- { title: "Development of Electric Galvanic Stimulator", partners: "이비인후과", period: "1999", grant: "" }
+- { title: "The Objective Analysis of Treatment Effect of Pigmented Skin Lesion using PC Color Information", partners: "성형외과", period: "1998 ~ 2000", grant: "" }
+- { title: "Impedance plethysmograph", partners: "", period: "1996 ~ 1997", grant: "MOWH" }
+- { title: "Quantitatively Evaluation of Liver Function Using Tc-99m", partners: "외과", period: "1994 ~ 1999", grant: "KOSEF" }
+- { title: "Inductive plethysmograph", partners: "생리학", period: "1994 ~ 1995", grant: "" }
+- { title: "Korea International Medical, Clinical, Laboratories & Hospital Equipment Show", partners: "", period: "1993.03.15 ~ 18", grant: "" }

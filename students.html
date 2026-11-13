@@ -4,30 +4,4 @@ title: Students
 heading: Students
 permalink: /students/
 ---
-{% assign s = site.data.students %}
-<h2>Graduate students</h2>
-{% if s.graduate.size > 0 %}
-<ul class="cards">{% for x in s.graduate %}<li class="card"><b>{{ x.name }}</b><span class="note">{{ x.area }}</span></li>{% endfor %}</ul>
-{% else %}<p class="muted">—</p>{% endif %}
-
-<h2>Undergraduate students</h2>
-<ul class="chips">{% for x in s.undergraduate %}<li>{{ x.name }} ({{ x.since }} ~)</li>{% endfor %}</ul>
-
-<h2>Alumni – graduate school</h2>
-<ul class="cards">
-{% for x in s.alumni_grad %}
-  <li class="card"><b>{% if x.url %}<a href="{{ x.url }}">{{ x.name }}</a>{% else %}{{ x.name }}{% endif %}{% if x.status %} <span class="ko">({{ x.status }})</span>{% endif %}</b>
-    {% if x.degree %}<span class="note">{{ x.degree }}</span>{% endif %}
-    {% if x.now %}<span class="note">{{ x.now }}</span>{% endif %}
-    {% if x.area %}<span class="note">Research: {{ x.area }}</span>{% endif %}</li>
-{% endfor %}
-</ul>
-
-<h2>Alumni – undergraduate research</h2>
-<ul class="cards">
-{% for x in s.alumni_undergrad %}
-  <li class="card"><b>{{ x.name }} <span class="ko">({{ x.status }})</span></b>
-    {% if x.now %}<span class="note">{{ x.now }}</span>{% endif %}
-    {% if x.area %}<span class="note">Project: {{ x.area }}</span>{% endif %}</li>
-{% endfor %}
-</ul>
+{% include pages/students.html %}

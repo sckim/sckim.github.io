@@ -4,9 +4,4 @@ title: Location
 heading: Location
 permalink: /location/
 ---
-{% assign p = site.data.profile %}
-<p>{{ p.affiliation }}<br>{{ p.address }}</p>
-{% capture q %}Hankyong National University, 327 Jungang-ro, Anseong-si, Gyeonggi-do{% endcapture %}
-<iframe class="map" title="Map" loading="lazy"
-  src="https://maps.google.com/maps?q={{ q | url_encode }}&output=embed"></iframe>
-<p><a href="https://maps.google.com/maps?q={{ q | url_encode }}">Open in Google Maps</a></p>
+{% include pages/location.html %}

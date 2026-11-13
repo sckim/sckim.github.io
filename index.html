@@ -2,37 +2,4 @@
 layout: default
 description: Soochan Kim, Professor at Hankyong National University. Eye movement, non-invasive bio-signal measurement, HCI.
 ---
-{% assign p = site.data.profile %}
-<section class="hero">
-  <img src="{{ p.photo | relative_url }}" alt="">
-  <div>
-    <h1>{{ p.name }} <span class="ko">{{ p.name_ko }}</span></h1>
-    <p><strong>{{ p.title }}</strong><br>{{ p.affiliation }}</p>
-    <p>{{ p.address }}<br>
-      <a href="#" data-email-user="{{ p.email_user }}" data-email-domain="{{ p.email_domain }}" data-email-show>E-mail</a>
-      {% for l in p.links %}{% if l.url != "" %} · <a href="{{ l.url }}">{{ l.title }}</a>{% endif %}{% endfor %}
-    </p>
-  </div>
-</section>
-
-<h2>Research interests</h2>
-<p>{{ p.research_interests }}</p>
-<div class="quick">
-  {% for item in site.nav %}{% unless item.url == "/" %}<a href="{{ item.url | relative_url }}">{{ item.title }}</a>{% endunless %}{% endfor %}
-</div>
-
-<h2>Career</h2>
-<ul class="timeline">
-  {% for c in site.data.career %}<li><span class="when">{{ c.period }}</span><span>{{ c.text }}</span></li>{% endfor %}
-</ul>
-
-<h2>Honors and awards</h2>
-<ul class="timeline">
-  {% for a in site.data.awards %}<li><span class="when">{{ a.year }}</span><span>{{ a.text }}</span></li>{% endfor %}
-</ul>
-
-<h2>Organizational activities</h2>
-<ul>{% for a in site.data.societies.activities %}<li>{{ a }}</li>{% endfor %}</ul>
-
-<h2>Professional societies</h2>
-<ul class="chips">{% for s in site.data.societies.societies %}<li>{{ s }}</li>{% endfor %}</ul>
+{% include pages/home.html %}

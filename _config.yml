@@ -6,16 +6,8 @@ lang: en
 plugins:
   - jekyll-sitemap
 
-# 상단 메뉴 (순서/이름 변경은 여기서) / Top navigation
-nav:
-  - { title: "Home",            url: "/" }
-  - { title: "Students",        url: "/students/" }
-  - { title: "Lectures",        url: "/lectures/" }
-  - { title: "Projects",        url: "/projects/" }
-  - { title: "Instruments",     url: "/instruments/" }
-  - { title: "Publications",    url: "/publications/" }
-  - { title: "Technical skill", url: "/skills/" }
-  - { title: "Location",        url: "/location/" }
+# 상단 메뉴·화면 문구는 _data/i18n.yml (en / ko 각각)에서 고칩니다. 한글판 본문 데이터는 _data/ko/ 입니다.
+# 아래 title/description 은 영문 기본값이며, 실제 페이지에서는 i18n.yml 의 값이 쓰입니다.
 
 exclude:
   - README.md

@@ -1,0 +1,13 @@
+{% assign lang = page.lang | default: "en" %}{% assign T = site.data.i18n[lang] %}
+{% if lang == "ko" %}{% assign items = site.data.ko.instruments %}{% else %}{% assign items = site.data.instruments %}{% endif %}
+{% if items.size > 0 %}
+<ul class="cards">
+{% for x in items %}
+  <li class="card">
+    {% if x.image %}<img class="thumb" src="{{ x.image | relative_url }}" alt="{{ x.name }}" loading="lazy">{% endif %}
+    {% if x.image2 %}<img class="thumb" src="{{ x.image2 | relative_url }}" alt="{{ x.name }}" loading="lazy">{% endif %}
+    <b>{% if x.url and x.url != "" %}<a href="{{ x.url }}" rel="noopener">{{ x.name }}</a>{% else %}{{ x.name }}{% endif %}</b>
+    <span class="note">{{ x.description }}</span></li>
+{% endfor %}
+</ul>
+{% else %}<p class="empty">{{ T.coming_soon }} (<code>_data/instruments.yml</code>)</p>{% endif %}

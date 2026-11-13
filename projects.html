@@ -4,13 +4,4 @@ title: Projects
 heading: Projects
 permalink: /projects/
 ---
-{% if site.data.projects.size > 0 %}
-<ul class="timeline">
-{% for x in site.data.projects %}
-  <li><span class="when">{{ x.period }}</span><span>
-    <b>{% if x.url and x.url != "" %}<a href="{{ x.url }}" rel="noopener">{{ x.title }}</a>{% else %}{{ x.title }}{% endif %}</b>
-    {% if x.partners != "" or x.grant != "" %}<br><span class="muted">{{ x.partners }}{% if x.partners != "" and x.grant != "" %} · {% endif %}{% if x.grant != "" %}Grant: {{ x.grant }}{% endif %}</span>{% endif %}
-  </span></li>
-{% endfor %}
-</ul>
-{% else %}<p class="empty">Content coming soon. (Edit <code>_data/projects.yml</code>)</p>{% endif %}
+{% include pages/projects.html %}

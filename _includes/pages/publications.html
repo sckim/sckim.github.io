@@ -1,0 +1,31 @@
+{% assign lang = page.lang | default: "en" %}{% assign T = site.data.i18n[lang] %}
+{% assign d = site.data.publications %}
+<div class="quick">
+  <a href="#journal">{{ T.pub_chip_journal }} ({{ d.journal.size }})</a>
+  <a href="#domestic-journal">{{ T.pub_chip_domestic_journal }} ({{ d.domestic_journal.size }})</a>
+  <a href="#conference">{{ T.pub_chip_conference }} ({{ d.conference.size }})</a>
+  <a href="#domestic-conference">{{ T.pub_chip_domestic_conference }} ({{ d.domestic_conference.size }})</a>
+  <a href="#patents">{{ T.pub_chip_patents }} ({{ d.patents.size }})</a>
+  <a href="#activities">{{ T.pub_chip_activities }}</a>
+</div>
+
+<h2 id="journal">{{ T.pub_journal }}</h2>
+{% include pub_list.html items=d.journal undated=T.undated %}
+
+<h2 id="domestic-journal">{{ T.pub_domestic_journal }}</h2>
+{% include pub_list.html items=d.domestic_journal undated=T.undated %}
+
+<h2 id="conference">{{ T.pub_conference }}</h2>
+{% include pub_list.html items=d.conference undated=T.undated %}
+
+<h2 id="domestic-conference">{{ T.pub_domestic_conference }}</h2>
+{% include pub_list.html items=d.domestic_conference undated=T.undated %}
+
+<h2 id="patents">{{ T.pub_patents }}</h2>
+{% include pub_list.html items=d.patents undated=T.undated %}
+
+<h2 id="activities">{{ T.pub_activities }}</h2>
+<ul>{% for x in d.external %}<li>{% if x.url != "" %}<a href="{{ x.url }}" rel="noopener">{{ x.text }}</a>{% else %}{{ x.text }}{% endif %}</li>{% endfor %}</ul>
+
+<h2>{{ T.pub_reports }}</h2>
+<ul>{% for x in d.reports %}<li>{{ x.text }}</li>{% endfor %}</ul>

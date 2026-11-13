@@ -1,0 +1,99 @@
+# 화면 문구(UI 문자열) 사전 / UI strings per language
+# en = 영문판(기존 주소), ko = 한글판(/ko/ 아래). 메뉴 이름·순서는 각 언어의 nav 에서 고칩니다.
+en:
+  lang_name: English
+  site_title: "Soochan Kim's Homepage"
+  description: "Soochan Kim, Professor, Dept. of Electrical and Electronic Engineering, Hankyong National University. Eye movement, non-invasive bio-signal measurement, HCI."
+  switch_label: "한국어"
+  switch_title: "한국어로 보기"
+  menu: Menu
+  dark_mode: Toggle dark mode
+  nav:
+    - { title: "Home",            url: "/" }
+    - { title: "Students",        url: "/students/" }
+    - { title: "Lectures",        url: "/lectures/" }
+    - { title: "Projects",        url: "/projects/" }
+    - { title: "Instruments",     url: "/instruments/" }
+    - { title: "Publications",    url: "/publications/" }
+    - { title: "Technical skill", url: "/skills/" }
+    - { title: "Location",        url: "/location/" }
+  research_interests: Research interests
+  career: Career
+  awards: Honors and awards
+  activities: Organizational activities
+  societies: Professional societies
+  email: E-mail
+  graduate: Graduate students
+  undergraduate: Undergraduate students
+  since_unit: " ~"
+  alumni_grad: Alumni – graduate school
+  alumni_undergrad: Alumni – undergraduate research
+  research: "Research:"
+  project: "Project:"
+  grant: "Grant:"
+  coming_soon: "Content coming soon."
+  undated: Undated
+  pub_journal: International journals
+  pub_domestic_journal: Domestic journals and books
+  pub_conference: International conferences
+  pub_domestic_conference: Domestic conferences
+  pub_patents: Patents
+  pub_activities: External activities
+  pub_reports: Patents and reports (early work)
+  pub_chip_journal: International journals
+  pub_chip_domestic_journal: Domestic journals
+  pub_chip_conference: International conferences
+  pub_chip_domestic_conference: Domestic conferences
+  pub_chip_patents: Patents
+  pub_chip_activities: Activities &amp; reports
+  map_title: Map
+  map_open: Open in Google Maps
+
+ko:
+  lang_name: 한국어
+  site_title: "김수찬 홈페이지"
+  description: "김수찬, 한경국립대학교 전기전자공학과 교수. 안구운동, 비침습 생체신호 측정, 인간-컴퓨터 상호작용(HCI)."
+  switch_label: "English"
+  switch_title: "View in English"
+  menu: 메뉴
+  dark_mode: 다크 모드 전환
+  nav:
+    - { title: "홈",        url: "/ko/" }
+    - { title: "학생",      url: "/ko/students/" }
+    - { title: "강의",      url: "/ko/lectures/" }
+    - { title: "연구과제",  url: "/ko/projects/" }
+    - { title: "보유 장비", url: "/ko/instruments/" }
+    - { title: "논문·특허", url: "/ko/publications/" }
+    - { title: "기술",      url: "/ko/skills/" }
+    - { title: "위치",      url: "/ko/location/" }
+  research_interests: 연구 관심분야
+  career: 경력
+  awards: 수상
+  activities: 학술 활동
+  societies: 소속 학회
+  email: 이메일
+  graduate: 대학원생
+  undergraduate: 학부 연구생
+  since_unit: "학번"
+  alumni_grad: 졸업생 – 대학원
+  alumni_undergrad: 졸업생 – 학부 연구생
+  research: "연구:"
+  project: "과제:"
+  grant: "지원:"
+  coming_soon: "내용을 준비 중이다."
+  undated: 연도 미상
+  pub_journal: 국제 학술지
+  pub_domestic_journal: 국내 학술지 및 저서
+  pub_conference: 국제 학술대회
+  pub_domestic_conference: 국내 학술대회
+  pub_patents: 특허
+  pub_activities: 외부 활동
+  pub_reports: 특허 및 보고서 (초기 활동)
+  pub_chip_journal: 국제 학술지
+  pub_chip_domestic_journal: 국내 학술지
+  pub_chip_conference: 국제 학술대회
+  pub_chip_domestic_conference: 국내 학술대회
+  pub_chip_patents: 특허
+  pub_chip_activities: 활동 및 보고서
+  map_title: 지도
+  map_open: Google 지도에서 열기

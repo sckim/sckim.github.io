@@ -1,0 +1,29 @@
+{% assign lang = page.lang | default: "en" %}{% assign T = site.data.i18n[lang] %}
+{% assign s = site.data.students %}
+{% if lang == "ko" %}{% assign ag = site.data.ko.students.alumni_grad %}{% assign au = site.data.ko.students.alumni_undergrad %}{% else %}{% assign ag = s.alumni_grad %}{% assign au = s.alumni_undergrad %}{% endif %}
+<h2>{{ T.graduate }}</h2>
+{% if s.graduate.size > 0 %}
+<ul class="cards">{% for x in s.graduate %}<li class="card"><b>{{ x.name }}</b><span class="note">{{ x.area }}</span></li>{% endfor %}</ul>
+{% else %}<p class="muted">—</p>{% endif %}
+
+<h2>{{ T.undergraduate }}</h2>
+<ul class="chips">{% for x in s.undergraduate %}<li>{{ x.name }} ({{ x.since }}{{ T.since_unit }})</li>{% endfor %}</ul>
+
+<h2>{{ T.alumni_grad }}</h2>
+<ul class="cards">
+{% for x in ag %}
+  <li class="card"><b>{% if x.url %}<a href="{{ x.url }}">{{ x.name }}</a>{% else %}{{ x.name }}{% endif %}{% if x.status %} <span class="ko">({{ x.status }})</span>{% endif %}</b>
+    {% if x.degree %}<span class="note">{{ x.degree }}</span>{% endif %}
+    {% if x.now %}<span class="note">{{ x.now }}</span>{% endif %}
+    {% if x.area %}<span class="note">{{ T.research }} {{ x.area }}</span>{% endif %}</li>
+{% endfor %}
+</ul>
+
+<h2>{{ T.alumni_undergrad }}</h2>
+<ul class="cards">
+{% for x in au %}
+  <li class="card"><b>{{ x.name }} <span class="ko">({{ x.status }})</span></b>
+    {% if x.now %}<span class="note">{{ x.now }}</span>{% endif %}
+    {% if x.area %}<span class="note">{{ T.project }} {{ x.area }}</span>{% endif %}</li>
+{% endfor %}
+</ul>

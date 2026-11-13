@@ -4,11 +4,4 @@ title: Lectures
 heading: Lectures
 permalink: /lectures/
 ---
-{% if site.data.lectures.size > 0 %}
-<ul class="timeline">
-{% for t in site.data.lectures %}
-  <li><span class="when">{{ t.term }}</span>
-    <span>{% for c in t.courses %}{% if c.url and c.url != "" %}<a href="{{ c.url }}" rel="noopener">{{ c.name }}</a>{% else %}{{ c.name }}{% endif %}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</span></li>
-{% endfor %}
-</ul>
-{% else %}<p class="empty">Content coming soon. (Edit <code>_data/lectures.yml</code>)</p>{% endif %}
+{% include pages/lectures.html %}

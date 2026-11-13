@@ -1,0 +1,12 @@
+# 한글판 학회·학술활동 (영문판 _data/societies.yml 과 같은 순서)
+societies:
+  - 대한의용생체공학회
+  - 한국전자파학회
+  - 대한전자공학회
+  - 한국정보기술학회
+  - IEEE EMBS
+
+activities:
+  - "TPC 위원, 2016 ICCE-Asia"
+  - "TPC 위원, IEEE ISCE 2014 (의료·생체신호처리 트랙)"
+  - "정보 및 제어 시스템 학술대회(Conference on Information and Control Systems), 2012 (대한전자공학회)"
