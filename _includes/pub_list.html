@@ -1,11 +1,13 @@
-{% comment %} 사용: {% include pub_list.html items=site.data.publications.journal %} — 연도별 그룹, 최신 연도가 위. year 는 숫자(모르면 0). {% endcomment %}
+{% comment %} 사용: {% include pub_list.html items=site.data.publications.journal %} — 연도별 그룹, 최신 연도가 위. year 는 숫자(모르면 0). 내 이름(_config.yml my_names)은 굵게. {% endcomment %}
 {% assign sorted = include.items | sort: "year" | reverse %}
 {% assign groups = sorted | group_by: "year" %}
 {% for g in groups %}
 <h3>{% if g.name == 0 or g.name == "" %}Undated{% else %}{{ g.name }}{% endif %}</h3>
 <ul class="pubs">
   {% for x in g.items %}
-  <li>{{ x.text }}
+  {% assign t = x.text %}
+  {% for n in site.my_names %}{% capture b %}<b>{{ n }}</b>{% endcapture %}{% assign t = t | replace: n, b %}{% endfor %}
+  <li>{{ t }}
     {% if x.pdf and x.pdf != "" %}<a href="{{ x.pdf }}" rel="noopener" target="_blank">[PDF]</a>{% endif %}
     {% if x.url and x.url != "" %}<a href="{{ x.url }}" rel="noopener" target="_blank">[link]</a>{% endif %}</li>
   {% endfor %}

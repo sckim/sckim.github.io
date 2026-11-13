@@ -21,3 +21,19 @@ exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
+
+# 논문·특허 목록에서 굵게 표시할 내 이름 표기 (정확히 일치하는 문자열). 새 표기를 쓰면 여기에 추가.
+my_names:
+  - "Soochan Kim"
+  - "Soo-Chan Kim"
+  - "Soo Chan Kim"
+  - "SooChan Kim"
+  - "Soo-chan Kim"
+  - "Kim, Soochan"
+  - "Kim, Soo-Chan"
+  - "Kim, SooChan"
+  - "Kim, Soo Chan"
+  - "Kim Soochan"
+  - "Kim Soo-Chan"
+  - "Kim,Soochan"
+  - "김수찬"
