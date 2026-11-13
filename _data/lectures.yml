@@ -1,3 +1,164 @@
-# 강의 / Lectures — 원문 수령 후 채움. 아래 형식으로 한 블록씩 추가.
-# - { course: "Embedded Systems", course_ko: "임베디드시스템", term: "2026-2", level: "Undergraduate", note: "", url: "" }
-[]
+# 강의 / Lectures  (원문: 옛 구글 사이트 Lectures 표, 최신순)
+# 새 학기는 맨 위에 한 블록 추가:
+# - term: "2026.2"
+#   courses:
+#     - { name: "과목명 - 학년", url: "" }   # url 은 강의실 카페/자료 링크(선택)
+- term: "2021.2"
+  courses:
+    - { name: "마이크로컨트롤러시스템설계 (주, 야) - 3학년", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "디지털시스템설계 - 2학년", url: "" }
+- term: "2021.1"
+  courses:
+    - { name: "마이크로컨트롤러 (주, 야)", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "디지털회로설계 - 2학년", url: "" }
+    - { name: "종합설계 I", url: "http://cafe.daum.net/hknuspal" }
+- term: "2020.2"
+  courses:
+    - { name: "마이크로컨트롤러시스템설계 (주, 야) - 3학년", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "디지털시스템설계 - 2학년", url: "" }
+- term: "2020.1"
+  courses:
+    - { name: "마이크로컨트롤러 (주, 야)", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "디지털회로설계 - 2학년", url: "" }
+    - { name: "종합설계 I", url: "http://cafe.daum.net/hknuspal" }
+- term: "2019.2"
+  courses:
+    - { name: "생체계측 (대학원)", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "의용전자시스템 (4학년)", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "마이크로컨트롤러시스템설계 (주, 야) - 3학년", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "디지털시스템설계 - 2학년", url: "" }
+- term: "2019.1"
+  courses:
+    - { name: "생체계측 (대학원)", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "마이크로컨트롤러 (주, 야)", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "디지털회로설계 - 2학년", url: "" }
+    - { name: "종합설계 I", url: "http://cafe.daum.net/hknuspal" }
+- term: "2018.2"
+  courses:
+    - { name: "논문연구 (대학원)", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "의료기기 및 물류 (대학원)", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "종합설계 II - 4학년", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "의용전자시스템 (4학년)", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "마이크로컨트롤러시스템설계 (주, 야) - 3학년", url: "http://cafe.daum.net/hknuspal" }
+- term: "2018.1"
+  courses:
+    - { name: "종합설계 I - 4학년", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "마이크로컨트롤러 (주, 야) - 3학년", url: "http://cafe.daum.net/hknuspal" }
+- term: "2017.2"
+  courses:
+    - { name: "헬스케어디바이스 (대학원)", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "논문연구 (대학원)", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "마이크로시스템설계 - 3학년", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "디지털 시스템설계 - 2학년", url: "https://drive.google.com/open?id=1bMg81Y-v2kaR8ppf6uZfWH4lk8RaPke8tVbbkFTFgVQ" }
+- term: "2017.1"
+  courses:
+    - { name: "생체계측 (대학원)", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "디지털회로설계 - 2학년", url: "https://drive.google.com/open?id=1bMg81Y-v2kaR8ppf6uZfWH4lk8RaPke8tVbbkFTFgVQ" }
+    - { name: "마이크로컨트롤러 - 3학년", url: "http://cafe.daum.net/hknuspal" }
+- term: "2016.2"
+  courses:
+    - { name: "논문연구 (대학원)", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "산업의료원 II - 4학년", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "디지털시스템설계 (주, 야) - 2학년", url: "http://cafe.daum.net/hknuspal" }
+- term: "2016.1"
+  courses:
+    - { name: "생체계측 (대학원)", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "마이크로컨트롤러 - 3학년", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "디지털회로설계 - 2학년", url: "https://drive.google.com/open?id=1bMg81Y-v2kaR8ppf6uZfWH4lk8RaPke8tVbbkFTFgVQ" }
+- term: "2015"
+  courses:
+    - { name: "연구년 (Johns Hopkins University)", url: "http://cafe.daum.net/hknuspal" }
+- term: "2014.2"
+  courses:
+    - { name: "헬스케어디바이스 (대학원)", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "헬스케어디시스템 (대학원)", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "산업의료원 II - 4학년", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "디지털시스템설계 - 2학년", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "선형대수학 - 1학년", url: "http://cafe.daum.net/hknuspal" }
+- term: "2014.1"
+  courses:
+    - { name: "종합설계 - 4학년", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "전자회로설계 및 실험 I - 3학년", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "디지털회로설계 - 2학년", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "프로그램밍언어 및 실습 I - 2학년", url: "http://cafe.daum.net/hknuspal" }
+- term: "2013.2"
+  courses:
+    - { name: "논문연구 (대학원)", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "산업의료원 II - 4학년", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "디지털시스템설계(주, 야) - 2학년", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "선형대수학 - 1학년", url: "http://cafe.daum.net/hknuspal" }
+- term: "2013.1"
+  courses:
+    - { name: "의료시스템 (대학원)", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "의료전자시스템 - 4학년", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "디지털시스템설계(주, 야) - 2학년", url: "http://cafe.daum.net/hknuspal" }
+- term: "2012.2"
+  courses:
+    - { name: "의료기기 (대학원)", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "디지털시스템설계 (주, 야) - 2학년", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "선형대수학 - 1학년", url: "http://cafe.daum.net/hknuspal" }
+- term: "2012.1"
+  courses:
+    - { name: "생체계측 - 대학원", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "논문연구 (대학원)", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "종합설계 - 4학년", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "디지털회로설계 - 2학년", url: "http://cafe.daum.net/hknuspal" }
+- term: "2011.2"
+  courses:
+    - { name: "디지털회로설계 (주, 야) - 2학년", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "생체신호처리 (대학원)", url: "http://cafe.daum.net/hknuspal" }
+- term: "2011.1"
+  courses:
+    - { name: "생체인식학 (대학원)", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "혼합신호 시스템 설계 (대학원)", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "캡스톤디자인 - 4학년", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "디지털공학 (주, 야) - 2학년", url: "http://cafe.daum.net/hknuspal" }
+- term: "2010.2"
+  courses:
+    - { name: "DSP 응용시스템 (대학원)", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "DSP 설계특론 (대학원)", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "디지털공학 (주,야) - 2학년", url: "http://cafe.daum.net/hknuspal" }
+- term: "2010.1"
+  courses:
+    - { name: "신호처리프로젝트특론 (대학원)", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "의료시스템설계 (대학원)", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "디지털공학 (주,야) - 2학년", url: "http://cafe.daum.net/hknuspal" }
+- term: "2009.2"
+  courses:
+    - { name: "디지털공학 II - 2학년", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "생체신호처리특론 (대학원)", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "생체계측실무 (대학원)", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "논문연구", url: "http://cafe.daum.net/hknuspal" }
+- term: "2009.1"
+  courses:
+    - { name: "생체신호처리 (대학원)", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "디지털공학 I", url: "http://cafe.daum.net/hknuspal" }
+- term: "2008."
+  courses:
+    - { name: "연구년 (KETI)", url: "http://cafe.daum.net/hknuspal" }
+- term: "2007.2"
+  courses:
+    - { name: "논문연구", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "신호처리프로젝트", url: "http://cafe.daum.net/hknuspal" }
+- term: "2007.1"
+  courses:
+    - { name: "생체인식학", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "논문연구", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "생체인식학특론", url: "http://cafe.daum.net/hknuspal" }
+- term: "2006.2"
+  courses:
+    - { name: "혼합신호시스템설계", url: "http://cafe.daum.net/hknuspal" }
+- term: "2006.1"
+  courses:
+    - { name: "고급디지털신호처리", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "생체신호처리", url: "http://cafe.daum.net/hknuspal" }
+- term: "2005.2"
+  courses:
+    - { name: "신경회로망", url: "http://cafe.daum.net/hknuspal" }
+- term: "2005.1"
+  courses:
+    - { name: "생체계측실무", url: "http://cafe.daum.net/hknuspal" }
+- term: "2004.2"
+  courses:
+    - { name: "생체인식학특강", url: "http://cafe.daum.net/hknuspal" }
+    - { name: "신호처리특론", url: "http://cafe.daum.net/hknuspal" }

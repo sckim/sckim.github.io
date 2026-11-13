@@ -7,8 +7,10 @@ permalink: /instruments/
 {% if site.data.instruments.size > 0 %}
 <ul class="cards">
 {% for x in site.data.instruments %}
-  <li class="card">{% if x.image %}<img src="{{ x.image | relative_url }}" alt="{{ x.name }}" style="width:100%;border-radius:6px">{% endif %}
-    <b>{% if x.url and x.url != "" %}<a href="{{ x.url }}">{{ x.name }}</a>{% else %}{{ x.name }}{% endif %}</b>
+  <li class="card">
+    {% if x.image %}<img class="thumb" src="{{ x.image | relative_url }}" alt="{{ x.name }}" loading="lazy">{% endif %}
+    {% if x.image2 %}<img class="thumb" src="{{ x.image2 | relative_url }}" alt="{{ x.name }}" loading="lazy">{% endif %}
+    <b>{% if x.url and x.url != "" %}<a href="{{ x.url }}" rel="noopener">{{ x.name }}</a>{% else %}{{ x.name }}{% endif %}</b>
     <span class="note">{{ x.description }}</span></li>
 {% endfor %}
 </ul>

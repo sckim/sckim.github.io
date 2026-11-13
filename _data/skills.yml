@@ -1,3 +1,10 @@
-# 기술 / Technical skills — 원문 수령 후 채움. 분류별로 한 블록씩 추가.
-# - { category: "Bio-signal", items: ["EOG", "EMG", "Eye tracking"] }
-[]
+# 기술 / Technical skills  (원문: techinical.txt)
+# 분류별로 한 블록. 항목 추가는 items 목록에 문자열 추가.
+- category: "Computer languages"
+  items: ["C/C++", "LabVIEW", "Python", "R", "Processing", "Pascal", "Delphi", "Visual Basic", "x86 Assembler", "DSP Assembler etc."]
+- category: "Hardware"
+  items: ["MSP430", "Atmel uC, 328P, 128L, etc", "TMS320C3x", "Arduino, Raspberry pi, Beaglebones", "Altera FPGA", "PIC16Cxx, 80C196KC, Z80",
+          "Analog - Signal amplifier, PLL, Filter, Opto, Step motor driver, De/Modulator, Power supplier, LCD, etc",
+          "Serial (RS232/422/485), Printer port interface"]
+- category: "Tools"
+  items: ["MATLAB", "Multisim & Ultiboard, OrCAD, Eagle, Proteus", "Quartus II (VHDL, Verilog)", "Solidworks", "MathCAD", "OpenCV", "SPSS", "iLAB", "Psychtoolbox"]

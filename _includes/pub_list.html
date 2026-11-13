@@ -1,0 +1,12 @@
+{% comment %} 사용: {% include pub_list.html items=site.data.publications.journal %} — 연도별(최신순) 그룹 {% endcomment %}
+{% assign groups = include.items | group_by: "year" | sort: "name" | reverse %}
+{% for g in groups %}
+<h3>{% if g.name == "" %}Undated{% else %}{{ g.name }}{% endif %}</h3>
+<ul class="pubs">
+  {% for x in g.items %}
+  <li>{{ x.text }}
+    {% if x.pdf and x.pdf != "" %}<a href="{{ x.pdf }}" rel="noopener" target="_blank">[PDF]</a>{% endif %}
+    {% if x.url and x.url != "" %}<a href="{{ x.url }}" rel="noopener" target="_blank">[link]</a>{% endif %}</li>
+  {% endfor %}
+</ul>
+{% endfor %}
