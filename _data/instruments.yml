@@ -1,0 +1,3 @@
+# 장비 / Instruments — 원문 수령 후 채움. 아래 형식으로 한 블록씩 추가.
+# - { name: "장비명", description: "설명", image: "/img/xxx.webp", url: "" }
+[]

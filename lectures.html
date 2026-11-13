@@ -1,0 +1,14 @@
+---
+layout: default
+title: Lectures
+heading: Lectures
+permalink: /lectures/
+---
+{% if site.data.lectures.size > 0 %}
+<ul class="cards">
+{% for x in site.data.lectures %}
+  <li class="card"><b>{% if x.url and x.url != "" %}<a href="{{ x.url }}">{{ x.course }}</a>{% else %}{{ x.course }}{% endif %}{% if x.course_ko %} <span class="ko">{{ x.course_ko }}</span>{% endif %}</b>
+    <span class="note">{{ x.level }} {{ x.term }}</span>{% if x.note %}<span class="note">{{ x.note }}</span>{% endif %}</li>
+{% endfor %}
+</ul>
+{% else %}<p class="empty">Content coming soon. (Edit <code>_data/lectures.yml</code>)</p>{% endif %}

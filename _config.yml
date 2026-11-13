@@ -1,0 +1,23 @@
+# 사이트 전역 설정 / Site-wide settings
+title: "Soochan Kim's Homepage"
+description: "Soochan Kim, Professor, Dept. of Electrical and Electronic Engineering, Hankyong National University. Eye movement, non-invasive bio-signal measurement, HCI."
+url: "https://sckim.github.io"
+lang: en
+plugins:
+  - jekyll-sitemap
+
+# 상단 메뉴 (순서/이름 변경은 여기서) / Top navigation
+nav:
+  - { title: "Home",            url: "/" }
+  - { title: "Students",        url: "/students/" }
+  - { title: "Lectures",        url: "/lectures/" }
+  - { title: "Projects",        url: "/projects/" }
+  - { title: "Instruments",     url: "/instruments/" }
+  - { title: "Publications",    url: "/publications/" }
+  - { title: "Technical skill", url: "/skills/" }
+  - { title: "Location",        url: "/location/" }
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

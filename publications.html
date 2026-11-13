@@ -1,0 +1,17 @@
+---
+layout: default
+title: Publications
+heading: Publications
+permalink: /publications/
+---
+{% if site.data.publications.size > 0 %}
+{% assign groups = site.data.publications | group_by: "year" | sort: "name" | reverse %}
+{% for g in groups %}
+<h2>{{ g.name }}</h2>
+<ul>
+  {% for x in g.items %}
+  <li>{{ x.authors }}, “{{ x.title }},” <em>{{ x.venue }}</em>.{% if x.url and x.url != "" %} <a href="{{ x.url }}">[link]</a>{% endif %}</li>
+  {% endfor %}
+</ul>
+{% endfor %}
+{% else %}<p class="empty">Content coming soon. (Edit <code>_data/publications.yml</code>)</p>{% endif %}

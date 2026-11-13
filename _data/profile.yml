@@ -1,0 +1,19 @@
+# 프로필 / Profile  (Home 페이지와 푸터에 사용)
+name: Soochan Kim
+name_ko: 김수찬
+title: Professor
+affiliation: Department of Electrical and Electronic Engineering, Hankyong National University
+affiliation_short: Dept. of Electrical and Electronic Engineering, Hankyong National University
+address: "327, Jungang-ro, Anseong-si, Gyeonggi-do, 17579, Korea"
+email_user: sckim
+email_domain: hknu.ac.kr
+photo: /img/EnjoyLearning.webp
+
+research_interests: >-
+  Research interests are in the measurement of eye movement, non-invasive
+  bio-signal measurement and analysis, human computer interaction, and their applications.
+
+links:
+  - { title: "LinkedIn",       url: "" }   # TODO: LinkedIn 주소 입력
+  - { title: "Department",     url: "" }   # TODO: 학과 홈페이지 주소 입력
+  - { title: "Lab cafe (members only)", url: "" }   # TODO: 다음 카페 주소 입력

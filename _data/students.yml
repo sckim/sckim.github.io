@@ -1,0 +1,66 @@
+# 학생 / Students
+# 현재 학생은 current, 졸업생은 alumni 아래에 한 블록씩 추가.
+# 사용 가능한 필드: name, name_en, status(예: 졸 2021), degree, area(연구주제), now(현 소속/진로), url
+graduate: []     # 대학원생 (원문에서 확인되지 않음)
+
+undergraduate:
+  - { name: "김동연", since: "23" }
+  - { name: "나준성", since: "24" }
+  - { name: "조희연", since: "24" }
+  - { name: "한윤지", since: "24" }
+  - { name: "강주성", since: "25" }
+
+# 졸업생 (대학원) / Alumni – graduate
+alumni_grad:
+  - { name: "Pyaephyoe Waitun", status: "2021", degree: "Master (KOICA)", area: "Apple sorter" }
+  - { name: "Nelson", status: "2020", degree: "Master (KOICA)", area: "Human effect by electrical vehicle EMF" }
+  - { name: "Kanitthika Kaewkannate (Cingi)", degree: "Ph.D student, Dept. of Electrical and Electronics Control Engineering", area: "Human motion analysis by using accelerometer, gyroscope, pressure sensor", url: "https://sites.google.com/site/kcingiprofile" }
+  - { name: "Ittaka", status: "2019", degree: "Doctoral student", now: "Laboratory of Digital System, Dept. of Electronics Engineering and Information Technology, Indonesia", area: "Colorimeter", url: "https://ds.jteti.ugm.ac.id/about/" }
+  - { name: "김태현", status: "석 2018", degree: "Master", now: "Lecturer, Anseong Polytech" }
+  - { name: "Akkarawat Kaewkwunoi", status: "석 2017", degree: "Master student, Dept. of Electrical and Electronics Control Engineering", area: "Human joint implementation, Robotic" }
+  - { name: "양주영", status: "석 2014", area: "Window program, Body sway system by Nintendo Wii" }
+  - { name: "Sasiporn Anumas", status: "박 2014", degree: "Ph.D student, Dept. of Bioinformation Engineering", area: "Driver's fatigue" }
+  - { name: "박민제", status: "석 2010", now: "(주)오스테오시스" }
+  - { name: "강인철", status: "석 2008입, 2015 학위" }
+  - { name: "황언주", status: "석 2007" }
+  - { name: "이화", status: "박사수료", now: "EX1 (CEO)" }
+
+# 졸업생 (학부 연구생) / Alumni – undergraduate (최신순)
+alumni_undergrad:
+  - { name: "양도현", status: "졸 2026" }
+  - { name: "윤형준", status: "졸 2026" }
+  - { name: "방민석", status: "졸 2026" }
+  - { name: "고은빛", status: "졸 2023" }
+  - { name: "강일권", status: "졸 2023" }
+  - { name: "신동관", status: "졸 2023" }
+  - { name: "고동균", status: "졸 2022" }
+  - { name: "김세연", status: "졸 2022" }
+  - { name: "정성찬", status: "졸 2022" }
+  - { name: "김연준", status: "졸 2022", now: "(주)삼영에스앤씨 / (주)라이프사이언스테크롤러지" }
+  - { name: "최서영", status: "졸 2021", now: "창업 준비중" }
+  - { name: "신우성", status: "졸 2021", now: "(주)이오테크닉스", area: "RC car control using a virtual globe" }
+  - { name: "김태민", status: "졸 2021", now: "나무가", area: "RC car control using a virtual globe" }
+  - { name: "유진아", status: "졸 2020", now: "에이팩트(구 하이셈)" }
+  - { name: "박재훈", status: "졸 2019", area: "Wearable goggle" }
+  - { name: "홍승한", status: "졸 2019", now: "Samsung Electronics" }
+  - { name: "진장민", status: "졸 2019", now: "한국우시오", area: "Virtual globe and impedance" }
+  - { name: "봉명근", status: "졸 2019", now: "금호폴리켐", area: "Virtual globe and impedance" }
+  - { name: "여현아", status: "졸 2019", area: "Virtual globe and impedance" }
+  - { name: "성진원", status: "졸 2018", now: "(주)에프엔에스 (F&S)", area: "PEMF cell stimulus" }
+  - { name: "윤희", status: "졸 2017", now: "대학원 진학 (박사?)" }
+  - { name: "김범수", status: "졸 2017", now: "광운대학원 진학 (박사)" }
+  - { name: "최현태", status: "졸 2016", now: "경희대학교 대학원 석사, KTL (한국산업기술시험원)", area: "Fire alarm" }
+  - { name: "배창범", status: "졸 2014", now: "(주)이오테크닉스", area: "Accelerometers and gyroscope, pressure sensors" }
+  - { name: "박준석", status: "졸 2014", area: "Magnetic field using Helmholtz, Quad-copter" }
+  - { name: "오상봉", status: "졸 2014", now: "(주)디알텍", area: "Accelerometers and gyroscope, pressure sensors" }
+  - { name: "박아론", status: "졸 2014", now: "(주)티에스이 / (주)티에프이", area: "Smart fan, accelerometer" }
+  - { name: "도성구", status: "졸 2013" }
+  - { name: "김경록", status: "졸 2013", now: "(주)빅텍 / (주)PNE Solution" }
+  - { name: "박준상", status: "졸 2013" }
+  - { name: "심태선", status: "졸 2012", now: "(주)ecosystems" }
+  - { name: "박찬선", status: "졸 2012" }
+  - { name: "양기선", status: "졸 2011" }
+  - { name: "신지영", status: "졸 2011" }
+  - { name: "이용섭", status: "졸 2011", now: "평택시청" }
+  - { name: "이종찬", status: "졸 2011", now: "(주)신우전자 / (주)선린전자" }
+  - { name: "조영기", status: "졸 2011" }

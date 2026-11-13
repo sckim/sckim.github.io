@@ -1,0 +1,13 @@
+---
+layout: default
+title: Projects
+heading: Projects
+permalink: /projects/
+---
+{% if site.data.projects.size > 0 %}
+<ul class="timeline">
+{% for x in site.data.projects %}
+  <li><span class="when">{{ x.period }}</span><span><b>{{ x.title }}</b>{% if x.agency %}<br><span class="muted">{{ x.agency }}{% if x.role %} · {{ x.role }}{% endif %}</span>{% endif %}{% if x.note %}<br>{{ x.note }}{% endif %}</span></li>
+{% endfor %}
+</ul>
+{% else %}<p class="empty">Content coming soon. (Edit <code>_data/projects.yml</code>)</p>{% endif %}

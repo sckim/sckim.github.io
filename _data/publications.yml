@@ -1,0 +1,4 @@
+# 논문·저술 / Publications — 원문 수령 후 채움. 아래 형식으로 한 블록씩 추가 (최신이 위).
+# type 예: journal, conference, patent, book
+# - { year: 2026, type: journal, authors: "S. Kim, ...", title: "논문 제목", venue: "저널명 vol, pages", url: "" }
+[]

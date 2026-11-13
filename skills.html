@@ -1,0 +1,12 @@
+---
+layout: default
+title: Technical skill
+heading: Technical skill
+permalink: /skills/
+---
+{% if site.data.skills.size > 0 %}
+{% for x in site.data.skills %}
+<h2>{{ x.category }}</h2>
+<ul class="chips">{% for i in x.items %}<li>{{ i }}</li>{% endfor %}</ul>
+{% endfor %}
+{% else %}<p class="empty">Content coming soon. (Edit <code>_data/skills.yml</code>)</p>{% endif %}
