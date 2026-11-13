@@ -1,7 +1,8 @@
-{% comment %} 사용: {% include pub_list.html items=site.data.publications.journal %} — 연도별(최신순) 그룹 {% endcomment %}
-{% assign groups = include.items | group_by: "year" | sort: "name" | reverse %}
+{% comment %} 사용: {% include pub_list.html items=site.data.publications.journal %} — 연도별 그룹, 최신 연도가 위. year 는 숫자(모르면 0). {% endcomment %}
+{% assign sorted = include.items | sort: "year" | reverse %}
+{% assign groups = sorted | group_by: "year" %}
 {% for g in groups %}
-<h3>{% if g.name == "" %}Undated{% else %}{{ g.name }}{% endif %}</h3>
+<h3>{% if g.name == 0 or g.name == "" %}Undated{% else %}{{ g.name }}{% endif %}</h3>
 <ul class="pubs">
   {% for x in g.items %}
   <li>{{ x.text }}
